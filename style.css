@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'Basier Circle';
+    src: local('Basier Circle Circle Regular'), local('Basier-Circle-Circle-Regular'),
+        url('BasierCircle-Regular.woff2') format('woff2'),
+        url('BasierCircle-Regular.woff') format('woff'),
+        url('BasierCircle-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body{
     background-color: #5cff696c;
+    font-family: 'Basier Circle', Arial, Helvetica, sans-serif;
 }
 
 #dashboard{
@@ -25,4 +36,30 @@ body{
 
     border-radius: 16px;
     background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+
+.sidebar{
+    position: absolute;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+    padding-left: 1.5rem;
+}
+
+.logo{
+    font-size:36px;
+}
+
+li{
+    list-style-type: none;
+    font-size: 1.25rem;
+}
+
+ul.main-nav, ul.sub-nav{
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
 }
