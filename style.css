@@ -8,7 +8,8 @@
     font-style: normal;
 }
 
-body{
+
+html, body{
     background-color: #5cff696c;
     font-family: 'Basier Circle', Arial, Helvetica, sans-serif;
 }
@@ -39,8 +40,8 @@ body{
     box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
 
     display:grid;
-    grid-template-columns: 40% 1fr 1fr;
-    grid-template-rows: 10% 1fr 1fr 1fr;
+    grid-template-columns: 50% 1fr 1fr;
+    grid-template-rows: 10% 30% 1fr 1fr;
     gap:2rem;
 }
 
@@ -119,4 +120,24 @@ ul.main-nav, ul.sub-nav{
     display: flex;
     flex-direction: column;
     gap:2rem;
+}
+
+
+.spending-stats{
+    grid-column: 2 / 4;
+    grid-row: 2;
+
+    background: rgba( 255, 255, 255, 0.6 );
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+
+    margin-right: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 22px;
 }
