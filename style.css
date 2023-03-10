@@ -40,7 +40,7 @@ html, body{
     box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
 
     display:grid;
-    grid-template-columns: 30% 1fr 1fr;
+    grid-template-columns: 30% 1fr 2fr;
     grid-template-rows: 10% 40% 1fr 1fr;
     gap:2rem;
 }
@@ -145,7 +145,7 @@ ul.main-nav, ul.sub-nav{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
 .spending-stats{
-    grid-column: 2 / 4;
+    grid-column: 3 / 4;
     grid-row: 2;
 
     background: rgba( 255, 255, 255, 0.6 );
