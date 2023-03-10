@@ -40,8 +40,8 @@ html, body{
     box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
 
     display:grid;
-    grid-template-columns: 50% 1fr 1fr;
-    grid-template-rows: 10% 30% 1fr 1fr;
+    grid-template-columns: 30% 1fr 1fr;
+    grid-template-rows: 10% 40% 1fr 1fr;
     gap:2rem;
 }
 
@@ -111,7 +111,7 @@ html, body{
 
 }
 
-.iconify{
+li .iconify{
     margin-right: 1.5rem;
 }
 
@@ -139,13 +139,17 @@ ul.main-nav, ul.sub-nav{
     width:240px;
 }
 
-
+/* 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    SPENDING STATS PANEL (TOP RIGHT)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
 .spending-stats{
     grid-column: 2 / 4;
     grid-row: 2;
 
     background: rgba( 255, 255, 255, 0.6 );
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     border-radius: 10px;
@@ -158,3 +162,78 @@ ul.main-nav, ul.sub-nav{
 
     font-size: 22px;
 }
+
+
+/* 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    CARD SELECTION PANEL (TOP LEFT)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+.card-selection{
+    grid-column: 1;
+    grid-row: 2;
+
+    background: rgba( 255, 255, 255, 0.6 );
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+
+    margin-left: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+}
+
+.card{
+    max-width:80%;
+    height: auto;
+    filter: drop-shadow(0px 3px 6px #4600495b);
+}
+
+.add-card .iconify{
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+.sub-card{
+    display: flex;
+    font-size: 20px;
+}
+
+.add-card{
+    margin-right: 2rem;
+    font-size: 20px;
+    font-family: 'Basier Circle', Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    padding:0.7rem 2rem 0.7rem 2rem;
+
+    background-color:#FADEFF;
+    border:none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.add-card:hover{
+    color:purple;
+    background-color: #f5f5f5;
+}
+
+
+.dropdown{
+    display: flex;
+    align-items: center;
+    background-color: #FADEFF;
+    padding:0.7rem 2rem 0.7rem 2rem;
+    border-radius: 12px;
+}
+
+#card-dropdown{
+    border:none;
+    background-color: #FADEFF;
+    margin-left:0.5rem;
+    cursor:pointer;
+}
+
