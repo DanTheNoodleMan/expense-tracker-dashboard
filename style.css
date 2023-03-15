@@ -41,7 +41,7 @@ html, body{
 
     display:grid;
     grid-template-columns: 30% 1fr 2fr;
-    grid-template-rows: 10% 40% 1fr 1fr;
+    grid-template-rows: 10% 40% 1fr 2%;
     gap:2rem;
 }
 
@@ -307,10 +307,9 @@ h1{
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 10% repeat(4, 1fr);
+    grid-template-rows: 50px  50px repeat(4, 1fr);
 
     font-size: 22px;
-    text-align: center;
 }
 
 .header-owe{
@@ -320,6 +319,10 @@ h1{
     justify-content: space-around;
 }
 
+.header-owe p{
+    margin-bottom: 0;
+}
+
 .header-owe::after {
     content: " ";
     display: block;
@@ -327,5 +330,112 @@ h1{
     height: 1px;
     background: rgb(172, 172, 172);
     width: 95%;
-    top: 24%;
+    top: 25%;
+}
+
+
+.owe-row1{
+    grid-row: 3;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 16px;
+    gap:1rem;
+
+}
+
+.owe-row2{
+    grid-row: 4;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 16px;
+    gap:1rem;
+}
+
+.owe-row3{
+    grid-row: 5;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 16px;
+    gap:1rem;
+
+}
+
+.owe-row4{
+    grid-row: 6;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 16px;
+    margin-left: -0.4rem;
+
+}
+
+.status-unpaid {
+    background-color: rgba(255, 139, 139, 0.651);
+    padding:0.5rem 1rem;
+}
+
+.status-paid {
+    background-color: #FADEFF;
+    padding:0.5rem 1.6rem;
+}
+
+/*********************************/
+.are-owed{
+    grid-column: 2;
+    grid-row: 3;
+
+    background: rgba( 255, 255, 255, 0.6 );
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px  50px repeat(4, 1fr);
+
+    font-size: 22px;
+}
+
+.header-owed{
+    grid-row: 2;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-owed p{
+    margin-bottom: 0;
+}
+
+.header-owed::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 1px;
+    background: rgb(172, 172, 172);
+    width: 95%;
+    top: 25%;
+}
+
+.owed-title{
+    grid-column: 1/5;
+    margin-left: 1rem;
+}
+
+.owe-title{
+    grid-column: 1/5;
+    margin-left: 1rem;
 }
